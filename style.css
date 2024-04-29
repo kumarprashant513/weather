@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border-radius: 1.5rem;
+    text-transform: capitalize;
+    height: 100vh;
+    width: 70vh;
+    background: linear-gradient(30deg, rgb(102, 0, 102), black);
+    margin: 5vh auto;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    height: 2rem;
+    padding-top: 3rem;
+}
+
+input,
+button {
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: rgb(165, 255, 225);
+}
+
+button{
+    background-color: rgb(214, 255, 152);
+    
+}
+
+input:hover,
+button:hover{
+    background-color: rgb(132, 197, 175);
+}
+
+button {
+    width: 2rem;
+}
+
+.location-not-found{
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #6b6b6b;
+    margin-top: 2rem;
+}
+
+h1{
+    width: 70%;
+}
+
+
+.error-img{
+    height: 8rem;
+    margin-top: 2rem;
+}
+
+
+.weather-img {
+    height: 10rem;
+    margin: 2rem 22vh 0;
+}
+
+.weather-body {
+    color: white;
+    font-size: 1rem;
+}
+
+.temperature-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.temperature {
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: bold;
+
+}
+
+sup{
+    font-size: 1.5rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: rgb(255, 165, 165);
+}
+
+.weather-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+.humidity p, .wind p{
+    
+    color: rgb(165, 255, 225);
+}
+
+
+i {
+    margin-right: .8rem;
+    
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 100%;
+    }
+
+    .input-box{
+        width: 90%;
+        height: 3rem;
+        margin-left: 1rem;
+    }
+
+    button{
+        width: 4rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+
+    #search-btn{
+        text-align: center;
+    }
+
+    .weather-img{
+        margin-left: 7.5rem;
+    }
+
+    .temperature-box{
+        margin-top: 1rem;
+    }
+    
+   .weather-detail{
+    margin-top: 7rem;
+   }
+}
